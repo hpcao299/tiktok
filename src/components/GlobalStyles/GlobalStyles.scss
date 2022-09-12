@@ -1,12 +1,19 @@
 :root {
+    --primary-color: #fe2c55;
+    --light-primary-color: #fe2c550f;
+    --secondary-color: #16182308;
     --text-color: #161823;
+    --white-color: #fff;
     --font-family: 'ProximaNova', sans-serif;
+
+    --header-height: 60px;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
 html {
@@ -14,7 +21,6 @@ html {
 }
 
 body {
-    font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizespeed;
