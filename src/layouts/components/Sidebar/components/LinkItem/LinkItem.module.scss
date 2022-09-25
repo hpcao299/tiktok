@@ -1,0 +1,24 @@
+.item {
+    display: flex;
+    align-items: center;
+    padding: 10px 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-color);
+    -webkit-transition: background ease-in-out 200ms;
+    transition: background ease-in-out 200ms;
+
+    &:hover {
+        background-color: var(--secondary-color);
+    }
+
+    svg {
+        font-size: 2.6rem;
+        margin-right: 10px;
+    }
+
+    &.active {
+        color: var(--primary-color);
+    }
+}

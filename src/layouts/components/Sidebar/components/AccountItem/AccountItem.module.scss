@@ -1,0 +1,49 @@
+.item {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: var(--text-color);
+    -webkit-transition: background ease-in-out 200ms;
+    transition: background ease-in-out 200ms;
+
+    &:hover {
+        background-color: var(--secondary-color);
+    }
+}
+
+.userTitleWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.tick {
+    margin-left: 4px;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 1.6rem;
+    max-width: 260px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.desc {
+    color: #161823bf;
+    font-size: 1.2rem;
+    font-weight: 400;
+    max-width: 260px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    border-radius: 50%;
+}

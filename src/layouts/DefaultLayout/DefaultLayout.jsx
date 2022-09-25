@@ -1,12 +1,16 @@
 import PropTypes from 'prop-types';
 import Header from '../components/Header';
+import Sidebar from '../components/Sidebar';
 import styles from './DefaultLayout.module.scss';
 function DefaultLayout({ children }) {
     return (
         <>
             <Header />
-            <div className={styles.container}>
-                <div className={styles.content}>{children}</div>
+            <div className={styles.content}>
+                <div className={styles.sidebarWrapper}>
+                    <Sidebar />
+                </div>
+                <div className={styles.contentWrapper}>{children}</div>
             </div>
         </>
     );

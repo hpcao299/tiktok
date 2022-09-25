@@ -1,0 +1,52 @@
+.sidebar {
+    position: fixed;
+    top: var(--header-height);
+    bottom: 0;
+    padding: 20px 8px 26px;
+    width: var(--sidebar-width);
+    overflow-y: auto;
+    background-color: var(--white-color);
+}
+
+.wrapper {
+    position: relative;
+    padding: 16px 0;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: 8px;
+        right: 8px;
+        top: 0;
+        background: rgba(22, 24, 35, 0.12);
+        -webkit-transform: scaleY(0.5);
+        -moz-transform: scaleY(0.5);
+        -ms-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+    }
+}
+
+.linkList {
+    margin-bottom: 8px;
+    list-style-type: none;
+}
+
+.loginHint {
+    font-size: 1.6rem;
+    line-height: 22px;
+    color: #16182380;
+}
+
+.loginBtn {
+    width: 100%;
+    margin-top: 20px;
+    min-height: 48px;
+    font-size: 1.8rem;
+}
+
+.copyright {
+    color: #16182380;
+    font-weight: 600;
+    font-size: 1.2rem;
+}

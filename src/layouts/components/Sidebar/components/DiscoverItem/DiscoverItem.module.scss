@@ -1,0 +1,38 @@
+.item {
+    display: inline-block;
+    max-width: 100%;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    margin-bottom: 12px;
+    margin-right: 8px;
+    padding: 3px 10px;
+    background-color: var(--white-color);
+    border: 1px solid rgba(22, 24, 35, 0.2);
+    border-radius: 12px;
+    transition: background 200ms ease-in-out;
+    -webkit-transition: background 200ms ease-in-out;
+
+    &:hover {
+        background-color: #16182308;
+    }
+
+    svg {
+        flex-shrink: 0;
+    }
+}
+
+.title {
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding-left: 6px;
+    color: #161823bf;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
