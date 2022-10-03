@@ -27,8 +27,9 @@
     }
 
     &.small {
-        min-height: 28px;
+        height: 28px;
         padding: 0 10px;
+        min-width: 88px;
     }
 
     &.primary {

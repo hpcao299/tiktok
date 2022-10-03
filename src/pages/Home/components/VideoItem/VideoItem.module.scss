@@ -1,0 +1,159 @@
+.video {
+    display: flex;
+    padding: 20px 0;
+    position: relative;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+.content-container {
+    margin-left: 12px;
+    width: 624px;
+    flex: 1 1 624px;
+}
+
+.user-info-container {
+    margin-right: 114px;
+}
+
+.author-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+
+    &:hover .author-title {
+        text-decoration: underline;
+    }
+}
+
+.author-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-right: 4px;
+}
+
+.tick-icon {
+    margin-left: 2px;
+}
+
+.author-name {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.video-desc {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.video-tag {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--text-color);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.video-music-info {
+    a {
+        color: var(--text-color);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-top: 4px;
+        margin-bottom: 12px;
+    }
+
+    svg {
+        margin-right: 5px;
+        transform: translateY(4px);
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.follow-btn {
+    position: absolute;
+    top: 28px;
+    right: 0;
+}
+
+.video-container {
+    display: flex;
+    align-items: flex-end;
+    max-height: calc(450px + (100vw - 768px) / 1152 * 100);
+    height: 100%;
+    min-width: 290px;
+    object-fit: cover;
+    position: relative;
+    width: 500px;
+    margin-top: 12px;
+}
+
+.video-display {
+    border-radius: 8px;
+    height: 100%;
+    max-width: 500px;
+    position: relative;
+
+    img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    video {
+        position: absolute;
+        border-radius: 8px;
+        height: 100%;
+        max-width: 500px;
+        top: 0;
+        left: 0;
+    }
+
+    &:hover .video-play {
+        opacity: 1;
+    }
+}
+
+.video-play {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s;
+    -webkit-transition: opacity 0.3s;
+    bottom: 26px;
+    left: 12px;
+    opacity: 0;
+
+    button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+
+.video-sound {
+    position: absolute;
+    bottom: 26px;
+    right: 12px;
+}
+
+.play-btn {
+    svg {
+        width: 18px;
+        height: 18px;
+    }
+}
